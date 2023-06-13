@@ -26,6 +26,11 @@ button:hover {
 /* Fuentes */
 body {
 	font-family: Arial, sans-serif;
+    background-image: url(../fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
 }
 
 /* Formulario */
@@ -36,6 +41,7 @@ form {
 	border: 1px solid #7544d6;
 	border-radius: 5px;
 	text-align: center;
+    background-color: rgba(240, 248, 255, 0.73);
 }
 
 /* Elementos de entrada de archivo y selección de archivo */

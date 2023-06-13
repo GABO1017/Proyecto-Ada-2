@@ -10,7 +10,7 @@ label {
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
-	color: #555;
+	color: #000000;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ table{
     width: 70%;
 }
 
-  tr {background-color: rgba(230, 146, 234, 0.254);}
+  tr {background-color: rgba(230, 146, 234, 0.55);}
   tr:nth-child(even) {background-color: #f672ffad;}
 
   td {
@@ -39,3 +39,11 @@ table{
     align-items: center;
 }
 
+body {
+	font-family: Arial, sans-serif;
+    background-image: url(../fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
