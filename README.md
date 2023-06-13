@@ -7,7 +7,7 @@ python3 -m venv venv
 
 install modules
 ```sh
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
 To run the app move to the flask_app folder
