@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+    <title>Calendario deportivo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Flask App</h1>
-
+    <h1>Calendario Deportivo</h1>
+    <div class="formulario">
     <form method="POST" action="/upload-file" enctype="multipart/form-data">
-        <button type="submit">Upload TXT</button>
+        <h2>Ingresa tu archivo .txt para generar tu calendario</h2>
         <input type="file" name="file">
+        <button type="submit">Generar Calendario</button>
     </form>
 
     <form method="GET" action="/manual-input">
-        <button type="submit">Manual Input (GET)</button>
+        <h2>Ingresa tus datos de forma manual</h2>
+        <button type="submit">Ingresar datos</button>
     </form>
-
+    </div>
 </body>
 </html>

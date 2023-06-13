@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Results</title>
+    <title>Resultado</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/results.css') }}">
 </head>
 <body>
-    <h1>Costo:</h1>
+    <h1>AQUI TIENES TU CALENDARIO!!</h1>
+    <h2>Costo:</h2>
     <label>{{ data["Costo"] }}</label>
 
-    <h1>Matriz:</h1>
+    <h2>Matriz:</h2>
+    <div class="tabla">
     <table>
         <thead>
             <tr>
                 {% for col in range(num_cols) %}
-                <th>Column {{ col + 1 }}</th>
+                <th>Equipo {{ col + 1 }}</th>
                 {% endfor %}
             </tr>
         </thead>
@@ -26,5 +29,6 @@
             {% endfor %}
         </tbody>
     </table>
+    </div>
 </body>
 </html>

@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+    <title>Insatisfacible</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/results.css') }}">
 </head>
 <body>
-    <h1>No se pudo calcular, problema Insatisfacible</h1>
+    <h1>Si su programa se demoro mas de 3 minutos su problema tiene solucion pero en un tiempo elevado,<br> si obtuvo este mensaje automaticamente, antes de los 3 minutos, su problema es Insatisfacible</h1>
+    <div class="container" style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;">
+    <div style="
+    background-image: url(../static/bmo.jpg); 
+    background-size: cover;
+    background-position: center; 
+    width: 50vh; 
+    height: 50vh;"
+    >
+    </div>
+    </div>
 </body>
 </html>

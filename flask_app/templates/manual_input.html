@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Data Sender</title>
+    <title>Ingreso manual</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/manual.css') }}">
     <script>
         function showMatrix() {
             var integer1Input = document.getElementById("n_teams");
@@ -95,7 +96,7 @@
     </script>
 </head>
 <body>
-    <h1>Manual Input</h1>
+    <h1>Ingresa tus datos manualmente</h1>
     <form method="POST" action="/manual-input" onsubmit="return validateForm()">
         <label for="n_teams">n:</label>
         <input type="text" id="n_teams" name="n_teams" oninput="showMatrix()" onkeydown="handleEnterKey(event)"><br><br>
@@ -108,7 +109,7 @@
             <h2>Matrix de costos de viaje:</h2>
         </div>
 
-        <input type="submit" value="Send">
+        <input type="submit" value="Send" class="subir">
     </form>
 </body>
 </html>

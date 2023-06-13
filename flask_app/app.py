@@ -3,6 +3,7 @@ from utils import solve_problem, solve_problem_from_data_list
 from variables import DZN_DATA_FILE
 
 app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 
 @app.route('/', methods=['POST','GET'])
